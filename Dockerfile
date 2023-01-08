@@ -3,7 +3,7 @@ ARG RUST_TARGET="x86_64-unknown-linux-musl"
 # Musl target, either x86_64-linux-musl, aarch64-linux-musl, arm-linux-musleabi, etc.
 ARG MUSL_TARGET="x86_64-linux-musl"
 # The crate features to build this with
-ARG FEATURES=""
+ARG FEATURES="expose-metrics"
 
 FROM alpine:latest as build
 ARG RUST_TARGET
